@@ -33,7 +33,7 @@ const CardCarousel = async () => {
             {/*<div >*/}
             {genres.map((genre) => (
                 // eslint-disable-next-line react/jsx-key
-                <div className="flex max-w-[1345px] flex-col mx-auto px-5">
+                <div className="flex max-w-[1345px] flex-col mx-auto pb-5">
                     <h1 className="py-5 text-2xl font-bold text-white">{genre} Movie &gt;</h1>
                     <div className="flex overflow-x-auto hide-scroll-bar">
                         <div className="flex">

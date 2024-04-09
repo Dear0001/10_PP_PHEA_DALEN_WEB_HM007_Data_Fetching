@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Card = ({image, movie_title, description}) => {
     return (
-        <div className="no-scrollbar w-64 h-64 max-w-xs overflow-hidden rounded-3xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out m-2">
+        <div className="no-scrollbar w-64 h-64 max-w-xs overflow-hidden rounded-[10px] shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out m-2">
 
-                <div className="relative mx-4 mt-4 overflow-hidden rounded-t-xl bg-white bg-clip-border shadow-lg">
+                <div className="relative mx-4 mt-4 overflow-hidden rounded bg-white bg-clip-border shadow-lg">
                     <Image
                         width={500}
                         height={500}

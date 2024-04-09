@@ -24,7 +24,7 @@ const Navbar = () => {
                     <input
                         type="search"
                         className="relative m-0 block min-w-0 flex-auto rounded-2xl border-solid py-2.5 border-secondary-500 bg-transparent bg-clip-padding px-3 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
-                        placeholder="Search"
+                        placeholder="Type to search..."
                         aria-label="Search"
                         aria-describedby="button-addon2"/>
                 </div>
