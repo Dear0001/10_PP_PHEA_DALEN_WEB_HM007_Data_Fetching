@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Navbar = () => {
     return (
-        <nav id="nav" className="fixed z-10 inset-x-0 px-4 flex flex-row justify-between text-white items-center text-center">
+        <nav id="nav" className="absolute z-10 inset-x-0 px-4 flex flex-row justify-between text-white items-center text-center">
             <div className="max-w-[300px]">
                 <Image src={'/assets/Legend-Cinema-600x600-removebg-preview.png'}
                        width={130}
@@ -23,7 +23,7 @@ const Navbar = () => {
                 <div className="flex w-[300px] items-center justify-between bg-white rounded-xl">
                     <input
                         type="search"
-                        className="relative m-0 block min-w-0 flex-auto rounded border border-solid py-2.5 border-secondary-500 bg-transparent bg-clip-padding px-3 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
+                        className="relative m-0 block min-w-0 flex-auto rounded-2xl border-solid py-2.5 border-secondary-500 bg-transparent bg-clip-padding px-3 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
                         placeholder="Search"
                         aria-label="Search"
                         aria-describedby="button-addon2"/>

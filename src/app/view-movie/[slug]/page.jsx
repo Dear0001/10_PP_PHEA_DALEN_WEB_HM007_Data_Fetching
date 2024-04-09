@@ -20,13 +20,13 @@ async function Page({params: {slug}}) {
         minute: '2-digit',
     });
 
-    const amOrPm = releaseDate.getHours() >= 12 ? 'PM' : 'AM';
+    const amAndPm = releaseDate.getHours() >= 12 ? 'PM' : 'AM';
 
 
     const roundedRating = Math.round(payload.rating);
-    console.log(roundedRating,"rpund")
+    console.log(roundedRating,"hello")
     const numberOfStars = Math.max(0, roundedRating);
-    console.log(numberOfStars,"setfd")
+    console.log(numberOfStars,"welcome")
     const starsArray =  Array(numberOfStars).fill(
         <FaStar className='text-yellow-500' />
     );
@@ -44,19 +44,19 @@ async function Page({params: {slug}}) {
                             </div>
                             <div className='w-4/12 h-full px-10 py-0'>
                             <h1 className='text-2xl font-bold text-white'>{payload.director}</h1>
-                <p>{payload.runtime} min</p>
-                <p>{payload.genre}</p>
+                <p className={'text-sm my-2 text-gray-400'}>{payload.runtime} min</p>
+                <p className={'text-[15px mb-2 text-gray-300'}>{payload.genre}</p>
                 <p className='flex'>
                     {starsArray.map((star, index) => (
                         <span key={index}>{star}</span>
                     ))}
                 </p>
                 <p className='mt-6 text-xl font-semibold'>{payload.movie_title}  ( {payload.released_year} )</p>
-                <p className=' line-clamp-6'>
+                <p className=' line-clamp-6 leading-relaxed'>
                     {payload.description}
                 </p>
                 <p className='mt-10 text-sm'>
-                    {formateDate}, {formateTime} {amOrPm}
+                    {formateDate}, {formateTime} {amAndPm}
                 </p>
             </div>
         </div>

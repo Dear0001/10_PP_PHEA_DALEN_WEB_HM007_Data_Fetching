@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card';
-import { getAllMoviesByGenre, getAllMovies } from '@/Service/movieService';
+import { getAllMoviesByGenre } from '@/Service/movieService';
 import Link from "next/link";
 
 async function List({genre}) {
@@ -9,7 +9,7 @@ async function List({genre}) {
     console.log("The action",movie.payload)
 
     return (
-        <div className='flex flex-row h-full'>
+        <div className='flex flex-row h-full overflow-x-auto'>
             {
                 movie.payload?.map(item => (
                     // eslint-disable-next-line react/jsx-key

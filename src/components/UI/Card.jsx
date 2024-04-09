@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Card = ({image, movie_title, description}) => {
     return (
-        <div className="w-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out m-2">
+        <div className="no-scrollbar w-64 h-64 max-w-xs overflow-hidden rounded-3xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out m-2">
 
-                <div className="relative mx-4 mt-4 h-35 h-35 overflow-hidden rounded-t-xl bg-white bg-clip-border shadow-lg">
+                <div className="relative mx-4 mt-4 overflow-hidden rounded-t-xl bg-white bg-clip-border shadow-lg">
                     <Image
                         width={500}
                         height={500}
@@ -14,10 +14,10 @@ const Card = ({image, movie_title, description}) => {
                     />
                 </div>
                 <div className="p-5">
-                    <h4 className="truncate leading-6 mb-2 block font-semibold text-blue-gray-900 antialiased">
+                    <h4 className="truncate text-[20px] leading-6 mb-2 block font-bold text-blue-gray-900 antialiased">
                         {movie_title}
                     </h4>
-                    <p className="truncate-2-lines block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-medium text-xs leading-relaxed text-transparent antialiased">
+                    <p className="line-clamp-2 block text-gray-600">
                         {description}
                     </p>
                 </div>
