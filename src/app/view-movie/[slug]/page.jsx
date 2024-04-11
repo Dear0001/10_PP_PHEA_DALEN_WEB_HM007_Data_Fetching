@@ -4,7 +4,6 @@ import { FaStar } from "react-icons/fa";
 async function Page({params: {slug}}) {
     console.log(slug)
     const {payload} = await viewDetails(slug);
-    console.log(payload.posted_at,"payload")
     const releaseDate = new Date(payload.posted_at);
 
 
@@ -24,9 +23,7 @@ async function Page({params: {slug}}) {
 
 
     const roundedRating = Math.round(payload.rating);
-    console.log(roundedRating,"hello")
     const numberOfStars = Math.max(0, roundedRating);
-    console.log(numberOfStars,"welcome")
     const starsArray =  Array(numberOfStars).fill(
         <FaStar className='text-yellow-500' />
     );
