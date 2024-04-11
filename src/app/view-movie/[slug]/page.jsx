@@ -37,7 +37,7 @@ async function Page({params: {slug}}) {
             <div className='flex w-full h-full'>
                 <div className='relative w-8/12 h-full'>
                     <Image
-                        src={payload.image? payload.image :"http://localhost:3000/_next/image?url=https%3A%2F%2Fpuui.wetvinfo.com%2Fvcover_hz_pic%2F0%2Ffc0jm32uyhpfqae1692700218430%2F0%3FimageMogr2%2Fthumbnail%2F1400x&w=256&q=75" }
+                        src={payload.image? payload.image :"https://prod-images.viu.com/2521856816/6feda49624fdc12682d3a83feb50a732252503f9" }
                             fill
                             className='object-cover'
                              alt={'hello'}/>
