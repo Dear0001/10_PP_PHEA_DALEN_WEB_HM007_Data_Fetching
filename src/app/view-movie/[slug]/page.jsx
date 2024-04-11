@@ -29,22 +29,21 @@ async function Page({params: {slug}}) {
     );
 
     return (
-        <div className='w-full h-screen px-16 text-white bg-red-950 py-28'>
-
+        <section className='w-full h-screen text-white bg-red-950 px-14 py-28'>
             <div className='flex w-full h-full'>
-                <div className='relative w-8/12 h-full'>
+                <div className='relative h-full w-8/12'>
                     <Image
                         src={payload.image? payload.image :"https://prod-images.viu.com/2521856816/6feda49624fdc12682d3a83feb50a732252503f9" }
                             fill
                             className='object-cover'
-                             alt={'hello'}/>
+                             alt={'image'}/>
                             </div>
                             <div className='w-4/12 h-full px-10 py-0'>
                             <h1 className='text-2xl font-bold text-white'>{payload.director}</h1>
-                <p className={'text-sm my-2 text-gray-400'}>{payload.runtime} min</p>
-                <p className={'text-[15px mb-2 text-gray-300'}>{payload.genre}</p>
+                <p className={'text-sm my-4 text-gray-300'}>{payload.runtime} min</p>
+                <p className={'text-[15px mb-4 text-gray-300'}>{payload.genre}</p>
                 <p className='flex'>
-                    {starsArray.map((star, index) => (
+                    {starsArray?.map((star, index) => (
                         <span key={index}>{star}</span>
                     ))}
                 </p>
@@ -57,8 +56,8 @@ async function Page({params: {slug}}) {
                 </p>
             </div>
         </div>
-</div>
-);
+</section>
+    );
 }
 
 export default Page;
